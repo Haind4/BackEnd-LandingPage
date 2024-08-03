@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tin_tucs",
+  "info": {
+    "singularName": "tin-tuc",
+    "pluralName": "tin-tucs",
+    "displayName": "tin-tuc",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tieude": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "noidung": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}
